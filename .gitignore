@@ -6,6 +6,8 @@ password.txt
 Data/
 data/
 __pycache__/
+static/
+templates/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
