@@ -138,3 +138,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# 코드파일_JY
+OCR_API.ipynb
