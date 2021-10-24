@@ -20,6 +20,10 @@ async def home(request : Request) :
 # async def video(request : Request) :
 #     return templates.TemplateResponse("video.html", context={"request": request})
 
+@app.get('/contact/')
+async def contact(request : Request) :
+    return templates.TemplateResponse("contact.html", context={"request": request})
+
 
 ngrok_tunnel = ngrok.connect(8000)
 print ('Public URL:', ngrok_tunnel.public_url)
