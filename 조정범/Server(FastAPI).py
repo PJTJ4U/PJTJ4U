@@ -20,9 +20,33 @@ async def home(request : Request) :
 async def contact(request : Request) :
     return templates.TemplateResponse("contact.html", context={"request": request})
 
-@app.get('/test_Service/', response_class=HTMLResponse)
-async def home(request : Request) :
-    return templates.TemplateResponse("testService.html", context={"request": request})
+@app.get('/introduce_Service/', response_class=HTMLResponse)
+async def introduceService(request : Request) :
+    return templates.TemplateResponse("introduceService.html", context={"request": request})
+
+@app.get('/introduce_Service/test_map/', response_class=HTMLResponse)
+async def testMap(request : Request) :
+    return templates.TemplateResponse("test_map.html", context={"request": request})
+
+@app.post("/introduce_Service/testService_output/")
+async def testService(request : Request, content: str = Form(...)):
+    import pandas as pd
+    import numpy as np
+    from sklearn.metrics.pairwise import cosine_similarity
+    from sentence_transformers import SentenceTransformer, util
+    df = pd.read_csv('C:\\Workspace\\python\\빅데이터 지능형서비스 개발 팀프로젝트\\PJTJ4U\\조정범\\Data\\Dataset\\주소변환완료.csv')
+    embedding_jibun = np.load('C:\\Workspace\\python\\빅데이터 지능형서비스 개발 팀프로젝트\\PJTJ4U\\조정범\\Data\\Dataset\\임베딩자료(지번)\\embedding_result(지번).npy')
+    sentences = [juso for juso in df['지번주소']]
+    model = SentenceTransformer('all-mpnet-base-v2')
+    input = content
+    input_embeddings = model.encode(input)
+    input_embeddings = np.expand_dims(input_embeddings, axis = 0) 
+    cosine_scores = cosine_similarity(embedding_jibun, input_embeddings)
+    cosine_scores_list= cosine_scores.tolist()
+    result = f"'{input}'과 가장 유사한 주소 : "
+    answer = f"'{sentences[cosine_scores_list.index(max(cosine_scores_list))]}'"
+    return templates.TemplateResponse("testService(output).html", {"request":request, "answer" : answer, "result" : result})
+
 
 ngrok_tunnel = ngrok.connect(8000)
 print ('Public URL:', ngrok_tunnel.public_url)
