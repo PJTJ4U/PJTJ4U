@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">       <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">       
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>빅데이터 지능형 서비스 개발 팀프로젝트(A반_1조)</title>
+        <title>(A반_1조) J4U</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href = "{{ url_for('static', path = '/assets/favicon.ico') }}" />
+        <link rel="icon" type="image/x-icon" href = "{{ url_for('static', path = '/assets/멀티캠퍼스로고.png') }}" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href = "{{ url_for('static', path = '/css/styles.css') }}" rel = "stylesheet">
     </head>
@@ -16,13 +17,13 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="/" style="font-family: 'Noto Sans KR', sans-serif;">멀티캠퍼스 팀프로젝트(2차)</a>
+                    <a class="navbar-brand" href="/" style="font-family: 'Noto Sans KR', sans-serif;">J4U</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="/" style="font-family: 'Noto Sans KR', sans-serif;">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/test_Service/" style="font-family: 'Noto Sans KR', sans-serif;">Test Our Service</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact/" style="font-family: 'Noto Sans KR', sans-serif;">Contact us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/" style="font-family: 'Noto Sans KR', sans-serif;">홈</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/introduce_Service/" style="font-family: 'Noto Sans KR', sans-serif;">서비스 소개</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact/" style="font-family: 'Noto Sans KR', sans-serif;">우리와 함께하기</a></li>
                             <li class="nav-item dropdown">
                             </li>
                         </ul>
@@ -38,7 +39,7 @@
                                 <h1 class="display-5 fw-bolder text-white mb-2" style="font-family: 'Noto Sans KR', sans-serif;">팀명 : J4U </h1>
                                 <p class="lead fw-normal text-white-50 mb-4" style="font-family: 'Noto Sans KR', sans-serif;">&nbsp;주제 : <br>&nbsp;택배서비스 자동화 및 간소화를<br>&nbsp;통한 서비스 품질개선 프로젝트</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href= "/test_Service/" style="font-family: 'Noto Sans KR', sans-serif;">서비스 소개</a>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href= "/introduce_Service/" style="font-family: 'Noto Sans KR', sans-serif;">서비스 소개</a>
                                     <a class="btn btn-outline-light btn-lg px-4" href= "{{ url_for('static', path = '/file/A분반_2조_입원예측서비스개발_수정.pdf') }}" target = "_blank" style="font-family: 'Noto Sans KR', sans-serif;">설명자료 보기</a>
                                 </div>
                             </div>
@@ -49,7 +50,7 @@
                 </div>
             </header>
             <!-- Features section-->
-            <section class="py-5" id="features">
+            <!-- <section class="py-5" id="features">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0" style="font-family: 'Noto Sans KR', sans-serif;">프로젝트 개요</h2></div>
@@ -79,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- Blog preview section-->
             <section class="bg-light py-5">
                 <div class="container px-5 my-5">
@@ -96,7 +97,7 @@
                             <div class="card h-100 shadow border-0">
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2" style="font-family: 'Noto Sans KR', sans-serif;">팀장</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3" style="font-family: 'Noto Sans KR', sans-serif;">느낀점</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link"><h5 class="card-title mb-3" style="font-family: 'Noto Sans KR', sans-serif;">느낀점</h5></a>
                                     <p class="card-text mb-0" style="font-family: 'Noto Sans KR', sans-serif;">느낀점 작성파트입니다.</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -116,7 +117,7 @@
                             <div class="card h-100 shadow border-0">
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2" style="font-family: 'Noto Sans KR', sans-serif;">팀원1</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3" style="font-family: 'Noto Sans KR', sans-serif;">느낀점</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link"><h5 class="card-title mb-3" style="font-family: 'Noto Sans KR', sans-serif;">느낀점</h5></a>
                                     <p class="card-text mb-0" style="font-family: 'Noto Sans KR', sans-serif;">느낀점 작성파트입니다.</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -136,7 +137,7 @@
                             <div class="card h-100 shadow border-0">
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2" style="font-family: 'Noto Sans KR', sans-serif;">팀원2</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3" style="font-family: 'Noto Sans KR', sans-serif;">느낀점</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link"><h5 class="card-title mb-3" style="font-family: 'Noto Sans KR', sans-serif;">느낀점</h5></a>
                                     <p class="card-text mb-0" style="font-family: 'Noto Sans KR', sans-serif;">느낀점 작성파트입니다.</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -156,7 +157,7 @@
                             <div class="card h-100 shadow border-0">
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2" style="font-family: 'Noto Sans KR', sans-serif;">팀원3</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3" style="font-family: 'Noto Sans KR', sans-serif;">느낀점</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link"><h5 class="card-title mb-3" style="font-family: 'Noto Sans KR', sans-serif;">느낀점</h5></a>
                                     <p class="card-text mb-0" style="font-family: 'Noto Sans KR', sans-serif;">느낀점 작성파트입니다.</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -185,49 +186,40 @@
                         <div class="col-lg-6">
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/우체국송장양식(빈칸).png') }}" alt="..." style="width:1000px; height:400px;"/><p></p>
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!"></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/택배송장 인식파트(필드도식화).png') }}" alt="..." style="width:1000px; height:400px;"/><p></p>
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!"></a>
-                            </div>
+                                <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/택배송장 인식파트(필드도식화).png') }}" alt="..." style="width:1000px; height:400px;"/><p></p>                            </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/경동택배.png') }}" alt="..." style="width:1000px; height:400px;"/><p></p>
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!"></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/경동택배송장 인식파트(필드도식화).png') }}" alt="..." style="width:1000px; height:400px;"/><p></p>
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!"></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/천일택배.jpg') }}" alt="..." style="width:1000px; height:250px;"/><p></p>
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!"></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/천일택배송장 인식파트(필드도식화).png') }}" alt="..." style="width:1000px; height:250px;"/><p></p>
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!"></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/한진택배.png') }}" alt="..." style="width:1000px; height:250px;"/><p></p>
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!"></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-3 mb-3" src="{{ url_for('static', path = '/images/한진택배송장 인식파트(필드도식화).png') }}" alt="..." style="width:1000px; height:250px;"/><p></p>
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!"></a>
                             </div>
                         </div>
                     </div>
