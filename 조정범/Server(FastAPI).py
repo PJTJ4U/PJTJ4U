@@ -16,14 +16,13 @@ templates = Jinja2Templates(directory = "C:/Workspace/python/빅데이터 지능
 async def home(request : Request) :
     return templates.TemplateResponse("index.html", context={"request": request})
 
-# @app.get('/video/')
-# async def video(request : Request) :
-#     return templates.TemplateResponse("video.html", context={"request": request})
-
 @app.get('/contact/')
 async def contact(request : Request) :
     return templates.TemplateResponse("contact.html", context={"request": request})
 
+@app.get('/test_Service/', response_class=HTMLResponse)
+async def home(request : Request) :
+    return templates.TemplateResponse("testService.html", context={"request": request})
 
 ngrok_tunnel = ngrok.connect(8000)
 print ('Public URL:', ngrok_tunnel.public_url)
