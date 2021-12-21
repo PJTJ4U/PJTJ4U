@@ -44,5 +44,4 @@
 ● 참고자료 및 사이트 출처
 
 1. AI 적용사례 관련 사이트1([https://medium.com/naver-cloud-platform/%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EC%84%B8%EC%9A%94-ocr%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%99%9C%EC%9A%A9%ED%95%A0%EA%B9%8C%EC%9A%94-ada22fb3c3ca](https://medium.com/naver-cloud-platform/이렇게-사용하세요-ocr을-어떻게-활용할까요-ada22fb3c3ca))
-<<<<<<< HEAD
 2. AI 적용사례 관련 사이트2(https://aihub.or.kr/node/410)
